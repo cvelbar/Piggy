@@ -57,8 +57,21 @@ class Piggy(PiggyParent):
     ****************
     '''
     def roman(self):
+      #make square
       self.deg_fwd(360)
-      time.sleep(3)
+      time.sleep(1)
+      self.right(primary = 40, counter = -40)
+      time.sleep(1)
+       self.deg_fwd(360)
+      time.sleep(1)
+      self.right(primary = 40, counter = -40)
+      time.sleep(1)
+       self.deg_fwd(360)
+      time.sleep(1)
+      self.right(primary = 40, counter = -40)
+      time.sleep(1)
+       self.deg_fwd(360)
+      time.sleep(1)
       self.right(primary = 40, counter = -40)
       time.sleep(1)
       self.stop()
@@ -69,6 +82,7 @@ class Piggy(PiggyParent):
         # TODO: check to see if it's safe before dancing
         
         # lower-ordered example...
+        #create dance
         self.right(primary=50, counter=50)
         time.sleep(2)
         self.stop()

@@ -83,11 +83,9 @@ class Piggy(PiggyParent):
         
         # lower-ordered example...
         #create dance
-      self.deg_fwd(360)
       time.sleep(1)
       self.right(primary = 40, counter = -40)
       time.sleep(1)
-      self.deg_fwd(360)
       time.sleep(1)
       self.left(primary = 40, counter = -40)
       time.sleep(1)

@@ -83,6 +83,8 @@ class Piggy(PiggyParent):
         
         # lower-ordered example...
         #create dance
+        self.right(primary = 40, counter = -40)
+        self.left(primary = 40, counter = -40)
         self.right(primary=50, counter=50)
         time.sleep(2)
         self.stop()

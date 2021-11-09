@@ -19,7 +19,7 @@ class Piggy(PiggyParent):
         '''
         self.LEFT_DEFAULT = 81
         self.RIGHT_DEFAULT = 80
-        self.MIDPOINT = 1300  # what servo command (1000-2000) is straight forward for your bot?
+        self.MIDPOINT = 1350  # what servo command (1000-2000) is straight forward for your bot?
         self.set_motor_power(self.MOTOR_LEFT + self.MOTOR_RIGHT, 0)
         self.load_defaults()
         
@@ -83,8 +83,6 @@ class Piggy(PiggyParent):
         
         # lower-ordered example...
         #create dance
-        self.right(primary = 40, counter = -40)
-        self.left(primary = 40, counter = -40)
         self.right(primary=50, counter=50)
         time.sleep(2)
         self.stop()

@@ -85,6 +85,10 @@ class Piggy(PiggyParent):
         #create dance
         self.right(primary=50, counter=50)
         time.sleep(2)
+         self.right(primary=50, counter=50)
+        time.sleep(2)
+         self.right(primary=50, counter=50)
+        time.sleep(2)
         self.stop()
         
 

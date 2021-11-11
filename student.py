@@ -56,6 +56,11 @@ class Piggy(PiggyParent):
     STUDENT PROJECTS
     ****************
     '''
+        
+    def roman(self):
+      while True:
+        self.read_distance()
+
     def roman(self):
       #make square
       self.deg_fwd(360)
@@ -79,9 +84,13 @@ class Piggy(PiggyParent):
       
     def dance(self):
         """A higher-ordered algorithm to make your robot dance"""
+        if safe_to_dance():
+          pass
+          
         # TODO: check to see if it's safe before dancing
         
         # lower-ordered example...
+
         #create dance
         print ("dance started")
         self.right(primary=50, counter=-50)

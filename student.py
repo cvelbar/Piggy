@@ -61,9 +61,11 @@ class Piggy(PiggyParent):
       while True:
         self.read_distance()
       
-    if self.read_distance > 200():
-      self.right(180)
-      self.deg_fwd()
+    def roman(self):
+      while True:
+      if self.read_distance < 200:
+        self.right(180)
+        self.deg_fwd()
 
     def roman2(self):
       #make square

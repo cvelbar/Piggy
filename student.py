@@ -65,8 +65,9 @@ class Piggy(PiggyParent):
       while True:
         self.fwd()
         if self.read_distance() < 200:
-          self.right(primary =40, counter = -40)
+          self.right(primary =180, counter = -180)
           time.sleep(1)
+
 
 
     def roman2(self):

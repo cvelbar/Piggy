@@ -79,11 +79,11 @@ class Piggy(PiggyParent):
             
 
           elif right > left :
-            self.right(primary = 43, counter =-40)
+            self.right(primary = 40, counter =-40)
             time.sleep(1)
             self.fwd()
             time.sleep(2)
-            self.left(primary = 41, counter =-37)
+            self.left(primary = 40, counter =-40)
             time.sleep(1)
             self.servo(self.MIDPOINT)
         

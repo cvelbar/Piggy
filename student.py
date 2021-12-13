@@ -56,7 +56,21 @@ class Piggy(PiggyParent):
     STUDENT PROJECTS
     ****************
     '''
-        
+
+    #maze
+    def roman(self):
+      while True:
+
+        if self.read_distance() < 200:
+          self.stop()
+
+
+
+
+
+
+
+    #swerve    
     def roman(self):
       while True:
 

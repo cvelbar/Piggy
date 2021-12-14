@@ -60,9 +60,21 @@ class Piggy(PiggyParent):
     #maze
     def roman(self):
       while True:
+        self.fwd()
+        if self.read_distance() < 150:
+          self.left (primary= 40, counter =-40)
+          time.sleep(1)
+          left = self.read_distance()
+          self.right (primary = 40, counter =-40)
+          time.sleep(1)
+          right = self.read_distance()
+          if right > left:
+            self.fwd()
+            time.sleep(1)
+          elf left › right:
+            self.left (primary + 40, counter =-40)
+            time, sleep(1)
 
-        if self.read_distance() < 200:
-          self.stop()
 
 
 

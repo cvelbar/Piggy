@@ -68,38 +68,35 @@ class Piggy(PiggyParent):
 
 
     #swerve    
-    def roman(self):
-      while True:
+    #def roman(self):
+      #while True:
 
-            self.left()
-            time.sleep(1)
-            self.right()
-            time.sleep(1)
-            self.fwd()
-            time.sleep(1)
-            self.right()
-            time.sleep(1)
-            self.left()
-            time.sleep(1)
-            self.fwd()
-            time.sleep(1)
+        #if self.read_distance() < 200:
+          #self.stop()
+          #self.servo(self.MIDPOINT + 300)
+          #time.sleep(1)
+          #left = self.read_distance()
+          #self.servo(self.MIDPOINT - 300)
+          #time.sleep(1)
 
-        if self.read_distance() < 200:
-          self.stop()
+      def roman(self):
+        while True:
+
+          self.fwd()
           self.servo(self.MIDPOINT + 300)
           time.sleep(1)
           left = self.read_distance()
           self.servo(self.MIDPOINT - 300)
           time.sleep(1)
           right = self.read_distance()
-          if left > right:
+          if left < 200:
             self.left()
             time.sleep(1)
             self.right()
             time.sleep(1)
             self.fwd()
             time.sleep(1)
-          if left < right:
+          if right < 200:
             self.right()
             time.sleep(1)
             self.left()

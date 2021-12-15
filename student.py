@@ -79,30 +79,30 @@ class Piggy(PiggyParent):
           #self.servo(self.MIDPOINT - 300)
           #time.sleep(1)
 
-      def roman(self):
-        while True:
+    def roman(self):
+      while True:
 
+        self.fwd()
+        self.servo(self.MIDPOINT + 300)
+        time.sleep(1)
+        left = self.read_distance()
+        self.servo(self.MIDPOINT - 300)
+        time.sleep(1)
+        right = self.read_distance()
+        if left < 200:
+          self.left()
+          time.sleep(1)
+          self.right()
+          time.sleep(1)
           self.fwd()
-          self.servo(self.MIDPOINT + 300)
           time.sleep(1)
-          left = self.read_distance()
-          self.servo(self.MIDPOINT - 300)
+        if right < 200:
+          self.right()
           time.sleep(1)
-          right = self.read_distance()
-          if left < 200:
-            self.left()
-            time.sleep(1)
-            self.right()
-            time.sleep(1)
-            self.fwd()
-            time.sleep(1)
-          if right < 200:
-            self.right()
-            time.sleep(1)
-            self.left()
-            time.sleep(1)
-            self.fwd()
-            time.sleep(1)
+          self.left()
+          time.sleep(1)
+          self.fwd()
+          time.sleep(1)
 
             #self.left(primary = 40, counter =-40)
             #time.sleep(1)

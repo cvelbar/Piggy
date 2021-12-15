@@ -90,7 +90,7 @@ class Piggy(PiggyParent):
         time.sleep(.1)
         right = self.read_distance()
         if self.read_distance(200):
-        if self.mid < 150:
+        if self.MIDPOINT < 150:
           self.stop  ()
         if left < 200:
           self.left()
